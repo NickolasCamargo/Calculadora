@@ -1,0 +1,52 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>mi calculadora</title> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head> 
+
+<body> 
+    <header>
+        <h1>Basic Calculator</h1>
+        <label class="switch">
+            <input type="checkbox" id="slider" checked>
+            <span class="slider"></span>
+        </label>
+    </header>
+    <div class="container">
+        <div class="calculadora">
+            <input type="text" id="display" disabled>
+        
+            <button onclick="clearDisplay()">C</button> <!-- Limpia la pantalla --> 
+            <button onclick="deleteLastCharacter()">&larr;</button> <!-- Limpia la pantalla --> 
+            <button onclick="calculatePercentage('%')">%</button> <!-- Limpia la pantalla --> 
+            <button onclick="appendToDisplay('/')">÷</button> <!-- Limpia la pantalla --> 
+
+            
+            <button onclick="appendToDisplay(7)">7</button> <!-- Agrega el número 7 al display --> 
+            <button onclick="appendToDisplay(8)">8</button> <!-- Agrega el número 8 al display --> 
+            <button onclick="appendToDisplay(9)">9</button> <!-- Agrega el número 9 al display --> 
+            <button onclick="appendToDisplay('*')">x</button> <!-- Agrega el operador de multiplicación al display --> 
+
+            <button onclick="appendToDisplay(4)">4</button> 
+            <button onclick="appendToDisplay(5)">5</button> 
+            <button onclick="appendToDisplay(6)">6</button> 
+            <button onclick="appendToDisplay('-')">-</button> 
+        
+            <button onclick="appendToDisplay(1)">1</button> 
+            <button onclick="appendToDisplay(2)">2</button> 
+            <button onclick="appendToDisplay(3)">3</button> 
+            <button onclick="appendToDisplay('+')">+</button> <!-- Agrega el operador de suma al display --> 
+            
+            <button class="col_2" onclick="appendToDisplay(0)">0</button>
+            <button onclick="appendToDisplay('.')">.</button> 
+            <button onclick="calculateResult()">=</button> <!-- Calcula el resultado de la expresión en el display -->      
+         </div>
+    </div>  
+</body> 
+<script src="script.js" type="text/javascript" defer></script>
+</html>
