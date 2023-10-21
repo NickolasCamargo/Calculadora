@@ -28,7 +28,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 55px;
+    font-size: 3rem;
     margin: 4%;
     color: #fff;
     
@@ -54,8 +54,8 @@ header{
     grid-template-columns: repeat(4,75px);
     grid-template-rows: 100px repeat(5,75px);
     background-color: #12142b;
-    padding: 15px;
-    border-radius: 32px;
+    padding: 1.5rem;
+    border-radius: 3%;
     box-shadow: 15px 10px 0px -5px #5f5e5e, 5px 5px 15px 5px #5f5e5e;
 
 
@@ -92,7 +92,7 @@ button:hover{
     flex-direction: column;
     align-items: flex-end;
     background-color: #757474;
-    border-radius: 32px;
+    border-radius: 3%;
     text-align: right;
     justify-content: space-between;
     word-break: break-all;
